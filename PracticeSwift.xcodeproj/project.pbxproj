@@ -24,7 +24,7 @@
 		F700B54D27AD3E8B0097D532 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B54C27AD3E8B0097D532 /* SecondViewController.swift */; };
 		F700B55227AD40770097D532 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B55127AD40770097D532 /* DelegateViewController.swift */; };
 		F700B55427AD40830097D532 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B55327AD40830097D532 /* DataViewController.swift */; };
-		F700B55827AD424E0097D532 /* ColorNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B55727AD424E0097D532 /* ColorNotification.swift */; };
+		F7747DB127B438DF00180FDB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7747DB027B438DF00180FDB /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		F700B54C27AD3E8B0097D532 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F700B55127AD40770097D532 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 		F700B55327AD40830097D532 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		F700B55727AD424E0097D532 /* ColorNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNotification.swift; sourceTree = "<group>"; };
+		F7747DB027B438DF00180FDB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			children = (
 				F700B52227AD37560097D532 /* AppDelegate.swift */,
 				F700B52427AD37560097D532 /* SceneDelegate.swift */,
-				F700B55927AD42800097D532 /* Observer */,
+				F7747DB227B43A9300180FDB /* Observer */,
 				F700B55527AD40C30097D532 /* Delegate */,
 				F700B54E27AD3F2C0097D532 /* Singleton */,
 				F700B54427AD38440097D532 /* APIRealm */,
@@ -172,20 +172,12 @@
 			path = DelegateVC;
 			sourceTree = "<group>";
 		};
-		F700B55927AD42800097D532 /* Observer */ = {
+		F7747DB227B43A9300180FDB /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				F700B55A27AD42900097D532 /* NotificationVC */,
+				F7747DB027B438DF00180FDB /* NotificationView.swift */,
 			);
 			path = Observer;
-			sourceTree = "<group>";
-		};
-		F700B55A27AD42900097D532 /* NotificationVC */ = {
-			isa = PBXGroup;
-			children = (
-				F700B55727AD424E0097D532 /* ColorNotification.swift */,
-			);
-			path = NotificationVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +268,7 @@
 				F700B55227AD40770097D532 /* DelegateViewController.swift in Sources */,
 				F700B54327AD383F0097D532 /* APIRealm.swift in Sources */,
 				F700B52527AD37560097D532 /* SceneDelegate.swift in Sources */,
-				F700B55827AD424E0097D532 /* ColorNotification.swift in Sources */,
+				F7747DB127B438DF00180FDB /* NotificationView.swift in Sources */,
 				F700B53727AD379C0097D532 /* Model.swift in Sources */,
 				F700B53927AD37A40097D532 /* API.swift in Sources */,
 				F700B55427AD40830097D532 /* DataViewController.swift in Sources */,
