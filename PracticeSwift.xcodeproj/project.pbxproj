@@ -19,11 +19,11 @@
 		F700B53E27AD37D60097D532 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F700B53D27AD37D60097D532 /* RealmSwift */; };
 		F700B54127AD38150097D532 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F700B54027AD38150097D532 /* Alamofire */; };
 		F700B54327AD383F0097D532 /* APIRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B54227AD383F0097D532 /* APIRealm.swift */; };
-		F700B54927AD3E700097D532 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B54827AD3E700097D532 /* Session.swift */; };
-		F700B54B27AD3E7F0097D532 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B54A27AD3E7F0097D532 /* FirstViewController.swift */; };
-		F700B54D27AD3E8B0097D532 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B54C27AD3E8B0097D532 /* SecondViewController.swift */; };
-		F700B55227AD40770097D532 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B55127AD40770097D532 /* DelegateViewController.swift */; };
-		F700B55427AD40830097D532 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700B55327AD40830097D532 /* DataViewController.swift */; };
+		F7091B8D27B6BECC00C15353 /* DelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7091B8C27B6BECC00C15353 /* DelegateVC.swift */; };
+		F7091B8F27B6BED600C15353 /* DataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7091B8E27B6BED600C15353 /* DataVC.swift */; };
+		F7091B9327B6C0FA00C15353 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7091B9227B6C0FA00C15353 /* FirstVC.swift */; };
+		F7091B9527B6C10200C15353 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7091B9427B6C10200C15353 /* SecondVC.swift */; };
+		F7091B9727B6C15E00C15353 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7091B9627B6C15E00C15353 /* Session.swift */; };
 		F7747DB127B438DF00180FDB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7747DB027B438DF00180FDB /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +39,11 @@
 		F700B53627AD379C0097D532 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F700B53827AD37A40097D532 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F700B54227AD383F0097D532 /* APIRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRealm.swift; sourceTree = "<group>"; };
-		F700B54827AD3E700097D532 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		F700B54A27AD3E7F0097D532 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F700B54C27AD3E8B0097D532 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		F700B55127AD40770097D532 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
-		F700B55327AD40830097D532 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		F7091B8C27B6BECC00C15353 /* DelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVC.swift; sourceTree = "<group>"; };
+		F7091B8E27B6BED600C15353 /* DataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataVC.swift; sourceTree = "<group>"; };
+		F7091B9227B6C0FA00C15353 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		F7091B9427B6C10200C15353 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		F7091B9627B6C15E00C15353 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		F7747DB027B438DF00180FDB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,9 +82,9 @@
 			children = (
 				F700B52227AD37560097D532 /* AppDelegate.swift */,
 				F700B52427AD37560097D532 /* SceneDelegate.swift */,
+				F7091B9827B6C18A00C15353 /* Singleton */,
+				F7091B9027B6BF8200C15353 /* Delegate */,
 				F7747DB227B43A9300180FDB /* Observer */,
-				F700B55527AD40C30097D532 /* Delegate */,
-				F700B54E27AD3F2C0097D532 /* Singleton */,
 				F700B54427AD38440097D532 /* APIRealm */,
 				F700B52827AD37560097D532 /* Main.storyboard */,
 				F700B52B27AD37590097D532 /* Assets.xcassets */,
@@ -129,47 +129,39 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		F700B54E27AD3F2C0097D532 /* Singleton */ = {
+		F7091B9027B6BF8200C15353 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				F700B54F27AD3F340097D532 /* Session */,
-				F700B55027AD3F3A0097D532 /* ViewSingleton */,
-			);
-			path = Singleton;
-			sourceTree = "<group>";
-		};
-		F700B54F27AD3F340097D532 /* Session */ = {
-			isa = PBXGroup;
-			children = (
-				F700B54827AD3E700097D532 /* Session.swift */,
-			);
-			path = Session;
-			sourceTree = "<group>";
-		};
-		F700B55027AD3F3A0097D532 /* ViewSingleton */ = {
-			isa = PBXGroup;
-			children = (
-				F700B54A27AD3E7F0097D532 /* FirstViewController.swift */,
-				F700B54C27AD3E8B0097D532 /* SecondViewController.swift */,
-			);
-			path = ViewSingleton;
-			sourceTree = "<group>";
-		};
-		F700B55527AD40C30097D532 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				F700B55627AD40D30097D532 /* DelegateVC */,
+				F7091B9127B6BF8C00C15353 /* DelegateVC */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
 		};
-		F700B55627AD40D30097D532 /* DelegateVC */ = {
+		F7091B9127B6BF8C00C15353 /* DelegateVC */ = {
 			isa = PBXGroup;
 			children = (
-				F700B55127AD40770097D532 /* DelegateViewController.swift */,
-				F700B55327AD40830097D532 /* DataViewController.swift */,
+				F7091B8C27B6BECC00C15353 /* DelegateVC.swift */,
+				F7091B8E27B6BED600C15353 /* DataVC.swift */,
 			);
 			path = DelegateVC;
+			sourceTree = "<group>";
+		};
+		F7091B9827B6C18A00C15353 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				F7091B9627B6C15E00C15353 /* Session.swift */,
+				F7091B9927B6C19100C15353 /* SingletonControllers */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		F7091B9927B6C19100C15353 /* SingletonControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7091B9227B6C0FA00C15353 /* FirstVC.swift */,
+				F7091B9427B6C10200C15353 /* SecondVC.swift */,
+			);
+			path = SingletonControllers;
 			sourceTree = "<group>";
 		};
 		F7747DB227B43A9300180FDB /* Observer */ = {
@@ -260,18 +252,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F700B54927AD3E700097D532 /* Session.swift in Sources */,
+				F7091B8D27B6BECC00C15353 /* DelegateVC.swift in Sources */,
 				F700B52727AD37560097D532 /* ViewController.swift in Sources */,
 				F700B52327AD37560097D532 /* AppDelegate.swift in Sources */,
-				F700B54D27AD3E8B0097D532 /* SecondViewController.swift in Sources */,
-				F700B54B27AD3E7F0097D532 /* FirstViewController.swift in Sources */,
-				F700B55227AD40770097D532 /* DelegateViewController.swift in Sources */,
+				F7091B9327B6C0FA00C15353 /* FirstVC.swift in Sources */,
 				F700B54327AD383F0097D532 /* APIRealm.swift in Sources */,
 				F700B52527AD37560097D532 /* SceneDelegate.swift in Sources */,
+				F7091B9527B6C10200C15353 /* SecondVC.swift in Sources */,
 				F7747DB127B438DF00180FDB /* NotificationView.swift in Sources */,
+				F7091B9727B6C15E00C15353 /* Session.swift in Sources */,
 				F700B53727AD379C0097D532 /* Model.swift in Sources */,
+				F7091B8F27B6BED600C15353 /* DataVC.swift in Sources */,
 				F700B53927AD37A40097D532 /* API.swift in Sources */,
-				F700B55427AD40830097D532 /* DataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
