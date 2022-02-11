@@ -1,12 +1,12 @@
 //
-//  FirstViewController.swift
+//  FirstVC.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 04.02.2022.
+//  Created by emil kurbanov on 11.02.2022.
 //
 
 import UIKit
-class FirstViewController: UIViewController {
+class FirstVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let session = Session.shared
