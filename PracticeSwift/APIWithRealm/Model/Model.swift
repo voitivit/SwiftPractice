@@ -2,14 +2,13 @@
 //  Model.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 04.02.2022.
+//  Created by emil kurbanov on 13.02.2022.
 //
 
 import Foundation
 import RealmSwift
-
-class Info: Object, Decodable {
-    @objc dynamic var id: Int
+class User: Object, Decodable {
+  @objc dynamic var id: Int
     @objc dynamic var name: String
     @objc dynamic var username: String
     @objc dynamic var email: String
@@ -18,6 +17,7 @@ class Info: Object, Decodable {
     @objc dynamic var website: String
     @objc dynamic var company: Company?
 }
+
 class Address: Object, Decodable {
     @objc dynamic var street: String
     @objc dynamic var suite: String
@@ -38,8 +38,6 @@ class Company: Object, Decodable {
     @objc dynamic var catchPhrase: String
     @objc dynamic var bs: String
 }
-
-
 //[
 //  {
 //    "id": 1,
