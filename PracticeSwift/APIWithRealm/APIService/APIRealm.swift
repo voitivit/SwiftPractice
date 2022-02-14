@@ -7,7 +7,7 @@
 
 import Foundation
 import RealmSwift
-class APIRealm {
+class APIRealm{
     func getAPIRealm(_ model: [User]){
         do {
             let realm = try Realm()
