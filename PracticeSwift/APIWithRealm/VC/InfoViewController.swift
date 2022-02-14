@@ -11,7 +11,6 @@ class InfoViewController: UIViewController {
     let api = API()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
-        super.viewDidLoad()
         api.getAPI {[weak self] userInfo in
             guard let self = self else {return}
             self.user = userInfo

@@ -15,7 +15,7 @@ class API {
     func getAPI(completion: @escaping ([User]) -> Void){
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
         AF.request(url).responseData { response in
-            guard let data = response.data else {return}
+            guard let data = response.data else  {return}
             do {
                 let json = try JSONDecoder().decode(user, from: data)
                 DispatchQueue.main.async {
