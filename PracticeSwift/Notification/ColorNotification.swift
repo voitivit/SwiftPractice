@@ -1,25 +1,23 @@
 //
-//  NotificationView.swift
+//  ColorNotification.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 09.02.2022.
+//  Created by emil kurbanov on 16.02.2022.
 //
 
 import UIKit
-
 let colorNotification = Notification.Name("colorNotification")
 class ColorNotification: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
-        NotificationCenter.default.addObserver(self, selector: #selector(colorChanges(color:)), name: colorNotification, object: nil)
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(colorChangedNotification(color: )), name: colorNotification, object: nil)
     }
-    @objc func colorChanges(color: Notification) {
-        view.backgroundColor = .red
+    @objc func colorChangedNotification(color: Notification){
+        self.view.backgroundColor = .red
     }
-    
-    @IBAction func buttonColor(_ sender: Any) {
+    @IBAction func buttonNotification(_ sender: Any) {
         NotificationCenter.default.post(name: colorNotification, object: nil)
     }
     deinit {

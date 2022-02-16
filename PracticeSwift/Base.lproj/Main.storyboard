@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hjv-tE-Ift">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vET-X1-GDr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -130,106 +130,106 @@
             <point key="canvasLocation" x="938" y="825"/>
         </scene>
         <!--DelegateVC-->
-        <scene sceneID="6IB-Pe-prv">
+        <scene sceneID="dEk-jp-sr5">
             <objects>
-                <viewController id="s06-8M-kov" customClass="DelegateVC" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0G4-oe-d13">
+                <viewController id="gWt-wx-zye" customClass="DelegateVC" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C4P-hR-X2g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ra-Ue-Kto">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-vm-EHO">
                                 <rect key="frame" x="100" y="433" width="214" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="IRO-Ek-Xhh"/>
+                                    <constraint firstAttribute="height" constant="50" id="kaK-mT-joo"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="buttonColorDelegate:" destination="s06-8M-kov" eventType="touchUpInside" id="fDM-f5-J3J"/>
+                                    <action selector="delegateButton:" destination="gWt-wx-zye" eventType="touchUpInside" id="H7d-T9-0hx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="2H7-ic-rEJ"/>
+                        <viewLayoutGuide key="safeArea" id="rus-Bb-KSs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1ra-Ue-Kto" firstAttribute="top" secondItem="2H7-ic-rEJ" secondAttribute="top" constant="389" id="R15-dC-Ffp"/>
-                            <constraint firstItem="2H7-ic-rEJ" firstAttribute="trailing" secondItem="1ra-Ue-Kto" secondAttribute="trailing" constant="100" id="XeO-Gy-YWV"/>
-                            <constraint firstItem="1ra-Ue-Kto" firstAttribute="leading" secondItem="2H7-ic-rEJ" secondAttribute="leading" constant="100" id="xAv-jO-Gtm"/>
+                            <constraint firstItem="rus-Bb-KSs" firstAttribute="trailing" secondItem="q1B-vm-EHO" secondAttribute="trailing" constant="100" id="5UB-k4-wQo"/>
+                            <constraint firstItem="q1B-vm-EHO" firstAttribute="top" secondItem="rus-Bb-KSs" secondAttribute="top" constant="389" id="PYZ-Pe-ee4"/>
+                            <constraint firstItem="q1B-vm-EHO" firstAttribute="leading" secondItem="rus-Bb-KSs" secondAttribute="leading" constant="100" id="uBz-ak-Fuh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="0z6-Xi-5qO" kind="presentation" id="hUT-UI-a3u"/>
+                        <segue destination="VnC-qb-kkj" kind="presentation" id="7PT-KI-eed"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RWl-vf-9Tj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pp-q4-3zh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="1578"/>
+            <point key="canvasLocation" x="183" y="1597"/>
         </scene>
-        <!--DataVC-->
-        <scene sceneID="X4L-kx-79G">
+        <!--Color Notification-->
+        <scene sceneID="hY8-Fs-H0w">
             <objects>
-                <viewController storyboardIdentifier="Data" id="0z6-Xi-5qO" customClass="DataVC" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zob-cO-AiN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController id="vET-X1-GDr" customClass="ColorNotification" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v4X-gR-bQf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQh-py-3XC">
-                                <rect key="frame" x="100" y="406" width="214" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENv-Rb-ex3">
+                                <rect key="frame" x="100" y="433" width="214" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="P9B-nw-VCx"/>
+                                    <constraint firstAttribute="height" constant="50" id="Kps-5w-oRm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="buttonData:" destination="0z6-Xi-5qO" eventType="touchUpInside" id="Mq7-q1-abk"/>
+                                    <action selector="buttonNotification:" destination="vET-X1-GDr" eventType="touchUpInside" id="m2z-5W-WfR"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="gBQ-R2-VeM"/>
+                        <viewLayoutGuide key="safeArea" id="ooh-6X-Gpt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gBQ-R2-VeM" firstAttribute="trailing" secondItem="DQh-py-3XC" secondAttribute="trailing" constant="100" id="HbK-PE-aUF"/>
-                            <constraint firstItem="DQh-py-3XC" firstAttribute="leading" secondItem="gBQ-R2-VeM" secondAttribute="leading" constant="100" id="fo8-7h-HYf"/>
-                            <constraint firstItem="DQh-py-3XC" firstAttribute="top" secondItem="gBQ-R2-VeM" secondAttribute="top" constant="406" id="lE7-bS-jjx"/>
+                            <constraint firstItem="ooh-6X-Gpt" firstAttribute="trailing" secondItem="ENv-Rb-ex3" secondAttribute="trailing" constant="100" id="b8r-V8-2jm"/>
+                            <constraint firstItem="ENv-Rb-ex3" firstAttribute="top" secondItem="ooh-6X-Gpt" secondAttribute="top" constant="389" id="o6d-Ww-H3e"/>
+                            <constraint firstItem="ENv-Rb-ex3" firstAttribute="leading" secondItem="ooh-6X-Gpt" secondAttribute="leading" constant="100" id="xUs-aD-NTF"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O7c-KC-Olr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inW-ZV-be1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="1578"/>
+            <point key="canvasLocation" x="221" y="2357"/>
         </scene>
-        <!--Color Notification-->
-        <scene sceneID="m77-21-C66">
+        <!--DataVC-->
+        <scene sceneID="Jdz-qh-NdH">
             <objects>
-                <viewController id="96m-mv-q2c" customClass="ColorNotification" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WGh-mN-j9f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="Data" id="VnC-qb-kkj" customClass="DataVC" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ViR-Mn-iCC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI9-U1-dL6">
-                                <rect key="frame" x="100" y="433" width="214" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh5-lP-P9h">
+                                <rect key="frame" x="100" y="389" width="214" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="yD2-LU-8co"/>
+                                    <constraint firstAttribute="height" constant="50" id="HCO-l4-SEF"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Нажать"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="buttonColor:" destination="96m-mv-q2c" eventType="touchUpInside" id="qeF-xo-MTI"/>
+                                    <action selector="dataButton:" destination="VnC-qb-kkj" eventType="touchUpInside" id="8Wt-3g-zUE"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="k1G-fo-III"/>
+                        <viewLayoutGuide key="safeArea" id="CLh-4M-xCA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gI9-U1-dL6" firstAttribute="leading" secondItem="k1G-fo-III" secondAttribute="leading" constant="100" id="4L3-hF-mIc"/>
-                            <constraint firstItem="gI9-U1-dL6" firstAttribute="top" secondItem="k1G-fo-III" secondAttribute="top" constant="389" id="G5s-YS-Re9"/>
-                            <constraint firstItem="k1G-fo-III" firstAttribute="trailing" secondItem="gI9-U1-dL6" secondAttribute="trailing" constant="100" id="Yr6-ze-i4U"/>
+                            <constraint firstItem="CLh-4M-xCA" firstAttribute="trailing" secondItem="hh5-lP-P9h" secondAttribute="trailing" constant="100" id="6fR-pF-JeY"/>
+                            <constraint firstItem="hh5-lP-P9h" firstAttribute="leading" secondItem="CLh-4M-xCA" secondAttribute="leading" constant="100" id="RxQ-lw-zso"/>
+                            <constraint firstItem="hh5-lP-P9h" firstAttribute="top" secondItem="CLh-4M-xCA" secondAttribute="top" constant="389" id="fXR-g6-8FM"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M57-NP-bxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubv-mp-Arm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="2460"/>
+            <point key="canvasLocation" x="929" y="1598"/>
         </scene>
     </scenes>
     <resources>
