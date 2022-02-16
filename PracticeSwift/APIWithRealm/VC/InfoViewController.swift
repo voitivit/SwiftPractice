@@ -11,9 +11,9 @@ class InfoViewController: UIViewController {
     let api = API()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
-        api.getAPI {[weak self] userInfo in
+        api.getAPI {[weak self] useInfo in
             guard let self = self else {return}
-            self.user = userInfo
+            self.user = useInfo
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -21,6 +21,7 @@ class InfoViewController: UIViewController {
         tableView.dataSource = self
     }
 }
+
 extension InfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return user.count
@@ -36,4 +37,3 @@ extension InfoViewController: UITableViewDataSource {
 }
 
 
-//https://jsonplaceholder.typicode.com/users
