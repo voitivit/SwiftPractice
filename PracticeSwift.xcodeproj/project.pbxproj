@@ -25,6 +25,7 @@
 		F73D08EE27BD6C8C0054ABC5 /* DataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D08ED27BD6C8C0054ABC5 /* DataVC.swift */; };
 		F73D08F027BD6C9E0054ABC5 /* DelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D08EF27BD6C9E0054ABC5 /* DelegateVC.swift */; };
 		F73D08F327BD6E210054ABC5 /* ColorNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D08F227BD6E210054ABC5 /* ColorNotification.swift */; };
+		F73D08F627BD6FD10054ABC5 /* UIPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D08F527BD6FD10054ABC5 /* UIPractice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		F73D08ED27BD6C8C0054ABC5 /* DataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataVC.swift; sourceTree = "<group>"; };
 		F73D08EF27BD6C9E0054ABC5 /* DelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVC.swift; sourceTree = "<group>"; };
 		F73D08F227BD6E210054ABC5 /* ColorNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNotification.swift; sourceTree = "<group>"; };
+		F73D08F527BD6FD10054ABC5 /* UIPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPractice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				F700B52227AD37560097D532 /* AppDelegate.swift */,
 				F700B52427AD37560097D532 /* SceneDelegate.swift */,
+				F73D08F727BD70C50054ABC5 /* UIPtactice */,
 				F73D08F427BD6F3A0054ABC5 /* Notification */,
 				F7091BA227B907C500C15353 /* APIWithRealm */,
 				F7091B9827B6C18A00C15353 /* Singleton */,
@@ -162,6 +165,14 @@
 				F73D08F227BD6E210054ABC5 /* ColorNotification.swift */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		F73D08F727BD70C50054ABC5 /* UIPtactice */ = {
+			isa = PBXGroup;
+			children = (
+				F73D08F527BD6FD10054ABC5 /* UIPractice.swift */,
+			);
+			path = UIPtactice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				F7091B9327B6C0FA00C15353 /* FirstVC.swift in Sources */,
 				F700B52527AD37560097D532 /* SceneDelegate.swift in Sources */,
 				F7091B9527B6C10200C15353 /* SecondVC.swift in Sources */,
+				F73D08F627BD6FD10054ABC5 /* UIPractice.swift in Sources */,
 				F7091B9D27B905F200C15353 /* Model.swift in Sources */,
 				F73D08F027BD6C9E0054ABC5 /* DelegateVC.swift in Sources */,
 				F73D08F327BD6E210054ABC5 /* ColorNotification.swift in Sources */,
