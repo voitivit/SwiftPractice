@@ -2,12 +2,13 @@
 //  Model.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 13.02.2022.
+//  Created by emil kurbanov on 18.02.2022.
 //
 
 import Foundation
 import RealmSwift
-class User: Object, Decodable {
+
+class Info: Object, Decodable {
   @objc dynamic var id: Int
     @objc dynamic var name: String
     @objc dynamic var username: String
@@ -33,32 +34,9 @@ class Geo: Object, Decodable {
         case longitude = "lng"
     }
 }
+
 class Company: Object, Decodable {
     @objc dynamic var name: String
-    @objc dynamic var catchPhrase: String
-    @objc dynamic var bs: String
+    @objc dynamic  var catchPhrase: String
+    @objc dynamic  var bs: String
 }
-//[
-//  {
-//    "id": 1,
-//    "name": "Leanne Graham",
-//    "username": "Bret",
-//    "email": "Sincere@april.biz",
-//    "address": {
-//      "street": "Kulas Light",
-//      "suite": "Apt. 556",
-//      "city": "Gwenborough",
-//      "zipcode": "92998-3874",
-//      "geo": {
-//        "lat": "-37.3159",
-//        "lng": "81.1496"
-//      }
-//    },
-//    "phone": "1-770-736-8031 x56442",
-//    "website": "hildegard.org",
-//    "company": {
-//      "name": "Romaguera-Crona",
-//      "catchPhrase": "Multi-layered client-server neural-net",
-//      "bs": "harness real-time e-markets"
-//    }
-//  },
