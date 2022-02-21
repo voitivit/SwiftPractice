@@ -8,15 +8,15 @@
 import UIKit
 
 class UserViewDataController: UIViewController {
-    var info: [Info] = []
+    var info:[Info] = []
     let api = API()
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        api.getAPI {[weak self] userInfo in
+        api.getAPI { [weak self] infoUser in
             guard let self = self else {return}
-            self.info = userInfo
+            self.info = infoUser
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

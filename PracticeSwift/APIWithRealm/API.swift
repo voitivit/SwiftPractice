@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 let info = [Info].self
 class API {
-    let realm = APIWithRealm()
+    let realmApi = APIWithRealm()
     func getAPI(completion: @escaping ([Info]) -> Void){
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
         AF.request(url).responseData { response in
@@ -17,7 +17,7 @@ class API {
             do {
                 let json = try JSONDecoder().decode(info, from: data)
                 DispatchQueue.main.async {
-                    self.realm.getAPIWithRealm(json)
+                    self.realmApi.getAPIRealm(json)
                     completion(json)
                 }
             } catch  {
