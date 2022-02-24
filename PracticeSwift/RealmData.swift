@@ -9,7 +9,7 @@ import UIKit
 import RealmSwift
 class RealmData: UIViewController {
   
-    override func viewDidLoad() {
+   /* override func viewDidLoad() {
         super.viewDidLoad()
         func getRealmData(_ model: [MyFamily]){
             do {
@@ -23,5 +23,5 @@ class RealmData: UIViewController {
                 print(error)
             }
         }
-    }
+    }*/
 }
