@@ -8,25 +8,25 @@
 import UIKit
 
 class UserViewDataController: UIViewController {
-    var info: [Info] = []
     let api = API()
+    var info: [Info] = []
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-          api.getAPI {[weak self] userInfo in
-              guard let self = self else {return}
+        api.getAPI {[weak self] userInfo in
+            guard let self = self else {return}
             self.info = userInfo
-              DispatchQueue.main.async {
-                  self.tableView.reloadData()
-              }
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
         tableView.dataSource = self
     }
     
 }
 
-extension UserViewDataController: UITableViewDataSource {
+extension UserViewDataController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return info.count
     }
