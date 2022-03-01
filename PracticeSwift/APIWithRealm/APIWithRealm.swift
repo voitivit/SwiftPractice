@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 class APIWithRealm {
-    func getAPIRealm(_ model: [Info]){
+    func realmApi(_ model: [Info]){
         do {
             let realm = try Realm()
             realm.beginWrite()
