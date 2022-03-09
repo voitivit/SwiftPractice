@@ -21,14 +21,14 @@
 		F73D08F327BD6E210054ABC5 /* ColorNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D08F227BD6E210054ABC5 /* ColorNotification.swift */; };
 		F73D08F627BD6FD10054ABC5 /* UIPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D08F527BD6FD10054ABC5 /* UIPractice.swift */; };
 		F752979D27BF6D090027A109 /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F752979C27BF6D090027A109 /* InfoData.swift */; };
-		F75297A927C54F980027A109 /* DelegateVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75297A827C54F980027A109 /* DelegateVIewController.swift */; };
-		F75297AB27C54FA40027A109 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75297AA27C54FA40027A109 /* DataViewController.swift */; };
 		F75297AF27C552780027A109 /* ModelRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75297AE27C552780027A109 /* ModelRealm.swift */; };
 		F75297B127C553F20027A109 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75297B027C553F20027A109 /* RealmData.swift */; };
 		F77C91F027D862D40041785E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C91EF27D862D40041785E /* Model.swift */; };
 		F77C91F227D862E10041785E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C91F127D862E10041785E /* InfoViewController.swift */; };
 		F77C91F427D862EB0041785E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C91F327D862EB0041785E /* API.swift */; };
 		F77C91F627D862FC0041785E /* RealmAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C91F527D862FC0041785E /* RealmAPI.swift */; };
+		F77C91FC27D868520041785E /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C91FB27D868520041785E /* DataViewController.swift */; };
+		F77C91FE27D8685E0041785E /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C91FD27D8685E0041785E /* DelegateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,14 +45,14 @@
 		F73D08F227BD6E210054ABC5 /* ColorNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNotification.swift; sourceTree = "<group>"; };
 		F73D08F527BD6FD10054ABC5 /* UIPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPractice.swift; sourceTree = "<group>"; };
 		F752979C27BF6D090027A109 /* InfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
-		F75297A827C54F980027A109 /* DelegateVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVIewController.swift; sourceTree = "<group>"; };
-		F75297AA27C54FA40027A109 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		F75297AE27C552780027A109 /* ModelRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRealm.swift; sourceTree = "<group>"; };
 		F75297B027C553F20027A109 /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		F77C91EF27D862D40041785E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F77C91F127D862E10041785E /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		F77C91F327D862EB0041785E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F77C91F527D862FC0041785E /* RealmAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAPI.swift; sourceTree = "<group>"; };
+		F77C91FB27D868520041785E /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		F77C91FD27D8685E0041785E /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 				F700B52427AD37560097D532 /* SceneDelegate.swift */,
 				F75297AE27C552780027A109 /* ModelRealm.swift */,
 				F75297B027C553F20027A109 /* RealmData.swift */,
+				F77C91FF27D868980041785E /* Delegate */,
 				F77C91F727D863050041785E /* APIRealm */,
-				F75297AC27C551200027A109 /* Delegate */,
 				F73D08F727BD70C50054ABC5 /* UIPtactice */,
 				F73D08F427BD6F3A0054ABC5 /* Notification */,
 				F7091B9827B6C18A00C15353 /* Singleton */,
@@ -148,23 +148,6 @@
 			path = InfoData;
 			sourceTree = "<group>";
 		};
-		F75297AC27C551200027A109 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				F75297AD27C5512C0027A109 /* DelegateViewControllers */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		F75297AD27C5512C0027A109 /* DelegateViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F75297A827C54F980027A109 /* DelegateVIewController.swift */,
-				F75297AA27C54FA40027A109 /* DataViewController.swift */,
-			);
-			path = DelegateViewControllers;
-			sourceTree = "<group>";
-		};
 		F77C91F727D863050041785E /* APIRealm */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +181,23 @@
 				F77C91F527D862FC0041785E /* RealmAPI.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F77C91FF27D868980041785E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F77C920027D868B90041785E /* DelegateViewController */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F77C920027D868B90041785E /* DelegateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F77C91FB27D868520041785E /* DataViewController.swift */,
+				F77C91FD27D8685E0041785E /* DelegateViewController.swift */,
+			);
+			path = DelegateViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,17 +281,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F700B52327AD37560097D532 /* AppDelegate.swift in Sources */,
+				F77C91FE27D8685E0041785E /* DelegateViewController.swift in Sources */,
 				F7091B9327B6C0FA00C15353 /* FirstVC.swift in Sources */,
 				F700B52527AD37560097D532 /* SceneDelegate.swift in Sources */,
-				F75297A927C54F980027A109 /* DelegateVIewController.swift in Sources */,
 				F77C91F627D862FC0041785E /* RealmAPI.swift in Sources */,
 				F77C91F427D862EB0041785E /* API.swift in Sources */,
 				F7091B9527B6C10200C15353 /* SecondVC.swift in Sources */,
 				F75297B127C553F20027A109 /* RealmData.swift in Sources */,
+				F77C91FC27D868520041785E /* DataViewController.swift in Sources */,
 				F77C91F027D862D40041785E /* Model.swift in Sources */,
 				F73D08F627BD6FD10054ABC5 /* UIPractice.swift in Sources */,
 				F752979D27BF6D090027A109 /* InfoData.swift in Sources */,
-				F75297AB27C54FA40027A109 /* DataViewController.swift in Sources */,
 				F77C91F227D862E10041785E /* InfoViewController.swift in Sources */,
 				F73D08F327BD6E210054ABC5 /* ColorNotification.swift in Sources */,
 				F75297AF27C552780027A109 /* ModelRealm.swift in Sources */,
