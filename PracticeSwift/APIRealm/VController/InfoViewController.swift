@@ -1,32 +1,29 @@
 //
-//  UserViewDataController.swift
+//  InfoViewController.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 18.02.2022.
+//  Created by emil kurbanov on 09.03.2022.
 //
 
 import UIKit
 
-class UserViewDataController: UIViewController {
-    let api = API()
+class InfoViewController: UIViewController {
     var info: [Info] = []
+    let api = API()
     @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        api.getAPI {[weak self] userInfo in
+        api.getAPI {[weak self] infoUser in
             guard let self = self else {return}
-            self.info = userInfo
+            self.info = infoUser
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
         tableView.dataSource = self
     }
-    
 }
-
-extension UserViewDataController: UITableViewDataSource{
+extension InfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return info.count
     }
