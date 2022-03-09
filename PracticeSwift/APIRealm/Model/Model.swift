@@ -2,17 +2,16 @@
 //  Model.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 18.02.2022.
+//  Created by emil kurbanov on 09.03.2022.
 //
 
 import Foundation
 import RealmSwift
-
 class Info: Object, Decodable {
-  @objc dynamic var id: Int
+   @objc dynamic var id: Int
     @objc dynamic var name: String
     @objc dynamic var username: String
-    @objc dynamic var email: String
+    @objc dynamic  var email: String
     @objc dynamic var address: Address?
     @objc dynamic var phone: String
     @objc dynamic var website: String
@@ -26,9 +25,11 @@ class Address: Object, Decodable {
     @objc dynamic var zipcode: String
     @objc dynamic var geo: Geo?
 }
+
 class Geo: Object, Decodable {
     @objc dynamic var latitude: String
     @objc dynamic var longitude: String
+    
     enum CodingKeys: String, CodingKey {
         case latitude = "lat"
         case longitude = "lng"
@@ -37,6 +38,8 @@ class Geo: Object, Decodable {
 
 class Company: Object, Decodable {
     @objc dynamic var name: String
-    @objc dynamic  var catchPhrase: String
-    @objc dynamic  var bs: String
+    @objc dynamic var catchPhrase: String
+    @objc dynamic var bs: String
 }
+
+
