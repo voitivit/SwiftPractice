@@ -1,15 +1,15 @@
 //
-//  RealmAPI.swift
+//  APIRealm.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 09.03.2022.
+//  Created by emil kurbanov on 14.03.2022.
 //
 
 import Foundation
 import RealmSwift
 
-class RealmAPI {
-    func getRealm(_ model: [Info]){
+class APIRealm {
+    func getAPIRealm(_ model: [Info]){
         do {
             let realm = try Realm()
             realm.beginWrite()
