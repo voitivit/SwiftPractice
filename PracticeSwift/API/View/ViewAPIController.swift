@@ -1,13 +1,12 @@
 //
-//  InfoViewController.swift
+//  ViewAPIController.swift
 //  PracticeSwift
 //
-//  Created by emil kurbanov on 09.03.2022.
+//  Created by emil kurbanov on 14.03.2022.
 //
 
 import UIKit
-
-class InfoViewController: UIViewController {
+class ViewAPIController: UIViewController {
     var info: [Info] = []
     let api = API()
     @IBOutlet weak var tableView: UITableView!
@@ -23,7 +22,7 @@ class InfoViewController: UIViewController {
         tableView.dataSource = self
     }
 }
-extension InfoViewController: UITableViewDataSource {
+extension ViewAPIController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return info.count
     }
