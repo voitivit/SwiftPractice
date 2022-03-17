@@ -29,6 +29,7 @@
 		F77C920627DF5CE40041785E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C920527DF5CE40041785E /* Model.swift */; };
 		F77C920827DF5CED0041785E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C920727DF5CED0041785E /* API.swift */; };
 		F77C920A27DF5CF80041785E /* APIRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C920927DF5CF80041785E /* APIRealm.swift */; };
+		F77C921027DF92E20041785E /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C920F27DF92E20041785E /* PracticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		F77C920527DF5CE40041785E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F77C920727DF5CED0041785E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F77C920927DF5CF80041785E /* APIRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRealm.swift; sourceTree = "<group>"; };
+		F77C920F27DF92E20041785E /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				F700B52227AD37560097D532 /* AppDelegate.swift */,
 				F700B52427AD37560097D532 /* SceneDelegate.swift */,
+				F77C921127DF92E50041785E /* PracitceView */,
 				F75297AE27C552780027A109 /* ModelRealm.swift */,
 				F75297B027C553F20027A109 /* RealmData.swift */,
 				F77C920B27DF5D010041785E /* API */,
@@ -200,6 +203,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		F77C921127DF92E50041785E /* PracitceView */ = {
+			isa = PBXGroup;
+			children = (
+				F77C920F27DF92E20041785E /* PracticeView.swift */,
+			);
+			path = PracitceView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +294,7 @@
 				F700B52327AD37560097D532 /* AppDelegate.swift in Sources */,
 				F77C91FE27D8685E0041785E /* DelegateViewController.swift in Sources */,
 				F7091B9327B6C0FA00C15353 /* FirstVC.swift in Sources */,
+				F77C921027DF92E20041785E /* PracticeView.swift in Sources */,
 				F700B52527AD37560097D532 /* SceneDelegate.swift in Sources */,
 				F77C920A27DF5CF80041785E /* APIRealm.swift in Sources */,
 				F77C920827DF5CED0041785E /* API.swift in Sources */,

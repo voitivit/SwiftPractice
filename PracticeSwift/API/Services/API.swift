@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 //https://jsonplaceholder.typicode.com/users
 let info = [Info].self
-class API {
+class API{
     let realm = APIRealm()
     func getAPI(completion: @escaping ([Info]) -> Void){
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
@@ -26,5 +26,7 @@ class API {
                 print(error)
             }
         }
+        
     }
+    
 }
