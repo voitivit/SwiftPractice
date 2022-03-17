@@ -12,9 +12,9 @@ class ViewAPIController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        api.getAPI {[weak self] infoUser in
+        api.getAPI {[weak self] userInfo in
             guard let self = self else {return}
-            self.info = infoUser
+            self.info = userInfo
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -22,6 +22,7 @@ class ViewAPIController: UIViewController {
         tableView.dataSource = self
     }
 }
+
 extension ViewAPIController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return info.count
