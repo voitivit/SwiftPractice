@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k6T-b3-FHO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GC3-1l-TaB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,6 +8,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View One-->
+        <scene sceneID="0ZX-at-kC5">
+            <objects>
+                <viewController id="GC3-1l-TaB" customClass="ViewOne" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ziE-sg-xeh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14Q-js-xh2">
+                                <rect key="frame" x="100" y="279" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Cc-xf-JC9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF3-Wy-bSW">
+                                <rect key="frame" x="100" y="465" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0UL-Qm-7VD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CXX-Aw-ldn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CXX-Aw-ldn" firstAttribute="trailing" secondItem="14Q-js-xh2" secondAttribute="trailing" constant="100" id="E0Z-6g-1lM"/>
+                            <constraint firstItem="SF3-Wy-bSW" firstAttribute="leading" secondItem="CXX-Aw-ldn" secondAttribute="leading" constant="100" id="Zc6-Ll-YqG"/>
+                            <constraint firstItem="14Q-js-xh2" firstAttribute="top" secondItem="CXX-Aw-ldn" secondAttribute="top" constant="235" id="cfL-qg-4wv"/>
+                            <constraint firstItem="CXX-Aw-ldn" firstAttribute="trailing" secondItem="SF3-Wy-bSW" secondAttribute="trailing" constant="100" id="eYO-vC-PjG"/>
+                            <constraint firstItem="SF3-Wy-bSW" firstAttribute="top" secondItem="14Q-js-xh2" secondAttribute="bottom" constant="136" id="iAF-Md-5LF"/>
+                            <constraint firstItem="14Q-js-xh2" firstAttribute="leading" secondItem="CXX-Aw-ldn" secondAttribute="leading" constant="100" id="sT5-4K-EzN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOne" destination="SF3-Wy-bSW" id="4SQ-Rv-q1W"/>
+                        <outlet property="labelOne" destination="14Q-js-xh2" id="oAm-kO-StQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KXz-5h-I6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328" y="-1857"/>
+        </scene>
         <!--Practice View-->
         <scene sceneID="OPV-FZ-uey">
             <objects>
@@ -21,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9M-M2-45t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="-592"/>
+            <point key="canvasLocation" x="-217" y="-858"/>
         </scene>
         <!--ViewAPI Controller-->
         <scene sceneID="7n7-pa-bUh">
