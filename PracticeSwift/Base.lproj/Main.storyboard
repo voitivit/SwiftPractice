@@ -32,6 +32,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="GC3-1l-TaB" eventType="touchUpInside" id="2oV-gW-mmr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CXX-Aw-ldn"/>

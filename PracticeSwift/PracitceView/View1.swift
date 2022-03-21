@@ -16,7 +16,13 @@ class ViewOne: UIViewController {
         buttonOne.addTarget(self, action: #selector(clickButtonOne), for: .touchUpInside)
     }
     @objc func clickButtonOne(){
-        view.backgroundColor = .red
+       view.backgroundColor = .white
         labelOne.text = "Привет!"
     }
+    
+    @IBAction func buttonAction(_ sender: Any) {
+        
+    }
+    
+    
 }
