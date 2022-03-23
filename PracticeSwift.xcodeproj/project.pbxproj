@@ -29,6 +29,8 @@
 		F77C920A27DF5CF80041785E /* APIRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C920927DF5CF80041785E /* APIRealm.swift */; };
 		F77C921027DF92E20041785E /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C920F27DF92E20041785E /* PracticeView.swift */; };
 		F77C925827E7B3F70041785E /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C925727E7B3F70041785E /* View1.swift */; };
+		F77C932727EA595F0041785E /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C932627EA595F0041785E /* RealmModel.swift */; };
+		F77C932927EA596E0041785E /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C932827EA596E0041785E /* RealmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		F77C920927DF5CF80041785E /* APIRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRealm.swift; sourceTree = "<group>"; };
 		F77C920F27DF92E20041785E /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		F77C925727E7B3F70041785E /* View1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
+		F77C932627EA595F0041785E /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		F77C932827EA596E0041785E /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			children = (
 				F700B52227AD37560097D532 /* AppDelegate.swift */,
 				F700B52427AD37560097D532 /* SceneDelegate.swift */,
+				F77C932A27EA59730041785E /* Realm */,
 				F77C921127DF92E50041785E /* PracitceView */,
 				F77C920B27DF5D010041785E /* API */,
 				F77C91FF27D868980041785E /* Delegate */,
@@ -208,6 +213,15 @@
 			path = PracitceView;
 			sourceTree = "<group>";
 		};
+		F77C932A27EA59730041785E /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				F77C932627EA595F0041785E /* RealmModel.swift */,
+				F77C932827EA596E0041785E /* RealmViewController.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,12 +308,14 @@
 				F77C921027DF92E20041785E /* PracticeView.swift in Sources */,
 				F77C925827E7B3F70041785E /* View1.swift in Sources */,
 				F700B52527AD37560097D532 /* SceneDelegate.swift in Sources */,
+				F77C932927EA596E0041785E /* RealmViewController.swift in Sources */,
 				F77C920A27DF5CF80041785E /* APIRealm.swift in Sources */,
 				F77C920827DF5CED0041785E /* API.swift in Sources */,
 				F7091B9527B6C10200C15353 /* SecondVC.swift in Sources */,
 				F77C920227D9F3300041785E /* ColorNotification.swift in Sources */,
 				F77C920627DF5CE40041785E /* Model.swift in Sources */,
 				F77C91FC27D868520041785E /* DataViewController.swift in Sources */,
+				F77C932727EA595F0041785E /* RealmModel.swift in Sources */,
 				F73D08F627BD6FD10054ABC5 /* UIPractice.swift in Sources */,
 				F752979D27BF6D090027A109 /* InfoData.swift in Sources */,
 				F77C920427DF5CDD0041785E /* ViewAPIController.swift in Sources */,
