@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uNw-CU-wCr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ati-p5-ohl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,6 +8,71 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Realm Controller-->
+        <scene sceneID="Y7o-m5-tUu">
+            <objects>
+                <viewController id="Ati-p5-ohl" customClass="ViewRealmController" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DUM-Ox-fOV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="utT-Q7-G3W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HME-Ac-EIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-472" y="-4124"/>
+        </scene>
+        <!--New Example Notification-->
+        <scene sceneID="gLP-1L-2Ay">
+            <objects>
+                <viewController id="vW9-a6-JFo" customClass="NewExampleNotification" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBC-uI-4YG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHm-N3-HJ7">
+                                <rect key="frame" x="217" y="257" width="51" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eRl-XZ-Ym8"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="toggleSwitch:" destination="vW9-a6-JFo" eventType="valueChanged" id="qPS-Ty-IiP"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjx-p6-UBm">
+                                <rect key="frame" x="45" y="251" width="126" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IIV-9B-4RD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="makeButton"/>
+                                <connections>
+                                    <action selector="makeButton:" destination="vW9-a6-JFo" eventType="touchUpInside" id="jfO-fd-cmE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ua0-98-77c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hjx-p6-UBm" firstAttribute="top" secondItem="Ua0-98-77c" secondAttribute="top" constant="207" id="Evu-yG-nZS"/>
+                            <constraint firstItem="AHm-N3-HJ7" firstAttribute="top" secondItem="Ua0-98-77c" secondAttribute="top" constant="213" id="OxD-M5-BlM"/>
+                            <constraint firstItem="Hjx-p6-UBm" firstAttribute="leading" secondItem="Ua0-98-77c" secondAttribute="leading" constant="45" id="Zco-CK-tmA"/>
+                            <constraint firstItem="AHm-N3-HJ7" firstAttribute="leading" secondItem="Hjx-p6-UBm" secondAttribute="trailing" constant="46" id="rCH-SB-aIM"/>
+                            <constraint firstItem="Ua0-98-77c" firstAttribute="trailing" secondItem="AHm-N3-HJ7" secondAttribute="trailing" constant="148" id="z6z-3X-wmv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="makePostButton" destination="Hjx-p6-UBm" id="eaM-Ls-7jA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vp-3x-8Zt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333.33333333333337" y="-3423.2142857142858"/>
+        </scene>
         <!--Realm View Controller-->
         <scene sceneID="g4O-3b-L3q">
             <objects>

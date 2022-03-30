@@ -31,6 +31,9 @@
 		F77C925827E7B3F70041785E /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C925727E7B3F70041785E /* View1.swift */; };
 		F77C932727EA595F0041785E /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C932627EA595F0041785E /* RealmModel.swift */; };
 		F77C932927EA596E0041785E /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C932827EA596E0041785E /* RealmViewController.swift */; };
+		F77C93C827F1C6A20041785E /* NewExampleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77C93C727F1C6A20041785E /* NewExampleNotification.swift */; };
+		F7AB47CC27F4CF61008B20FE /* ViewRealmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB47CB27F4CF61008B20FE /* ViewRealmController.swift */; };
+		F7AB47CE27F4CF74008B20FE /* ModelTestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB47CD27F4CF74008B20FE /* ModelTestUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		F77C925727E7B3F70041785E /* View1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
 		F77C932627EA595F0041785E /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		F77C932827EA596E0041785E /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		F77C93C727F1C6A20041785E /* NewExampleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExampleNotification.swift; sourceTree = "<group>"; };
+		F7AB47CB27F4CF61008B20FE /* ViewRealmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRealmController.swift; sourceTree = "<group>"; };
+		F7AB47CD27F4CF74008B20FE /* ModelTestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTestUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F77C920127D9F32F0041785E /* ColorNotification.swift */,
+				F77C93C727F1C6A20041785E /* NewExampleNotification.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -216,10 +223,20 @@
 		F77C932A27EA59730041785E /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				F7AB47CB27F4CF61008B20FE /* ViewRealmController.swift */,
+				F7AB47CD27F4CF74008B20FE /* ModelTestUser.swift */,
+				F7AB47CA27F4CF35008B20FE /* RealmAPI */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		F7AB47CA27F4CF35008B20FE /* RealmAPI */ = {
+			isa = PBXGroup;
+			children = (
 				F77C932627EA595F0041785E /* RealmModel.swift */,
 				F77C932827EA596E0041785E /* RealmViewController.swift */,
 			);
-			path = Realm;
+			path = RealmAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,12 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AB47CE27F4CF74008B20FE /* ModelTestUser.swift in Sources */,
 				F700B52327AD37560097D532 /* AppDelegate.swift in Sources */,
 				F77C91FE27D8685E0041785E /* DelegateViewController.swift in Sources */,
 				F7091B9327B6C0FA00C15353 /* FirstVC.swift in Sources */,
 				F77C921027DF92E20041785E /* PracticeView.swift in Sources */,
 				F77C925827E7B3F70041785E /* View1.swift in Sources */,
 				F700B52527AD37560097D532 /* SceneDelegate.swift in Sources */,
+				F77C93C827F1C6A20041785E /* NewExampleNotification.swift in Sources */,
 				F77C932927EA596E0041785E /* RealmViewController.swift in Sources */,
 				F77C920A27DF5CF80041785E /* APIRealm.swift in Sources */,
 				F77C920827DF5CED0041785E /* API.swift in Sources */,
@@ -317,6 +336,7 @@
 				F77C91FC27D868520041785E /* DataViewController.swift in Sources */,
 				F77C932727EA595F0041785E /* RealmModel.swift in Sources */,
 				F73D08F627BD6FD10054ABC5 /* UIPractice.swift in Sources */,
+				F7AB47CC27F4CF61008B20FE /* ViewRealmController.swift in Sources */,
 				F752979D27BF6D090027A109 /* InfoData.swift in Sources */,
 				F77C920427DF5CDD0041785E /* ViewAPIController.swift in Sources */,
 				F7091B9727B6C15E00C15353 /* Session.swift in Sources */,
