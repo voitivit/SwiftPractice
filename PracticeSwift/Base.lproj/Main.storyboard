@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k6T-b3-FHO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KU2-9k-DfI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,6 +8,63 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Name Table Controller-->
+        <scene sceneID="UpF-yB-VKS">
+            <objects>
+                <viewController id="KU2-9k-DfI" customClass="ViewNameTableController" customModule="PracticeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UtM-Vs-Dxx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XAX-fD-3SI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="wbE-Ny-Nv8" customClass="NameTableViewCell" customModule="PracticeSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbE-Ny-Nv8" id="bX1-Jx-89S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYa-a0-vBv">
+                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IYa-a0-vBv" firstAttribute="top" secondItem="bX1-Jx-89S" secondAttribute="topMargin" id="IdF-NV-ARv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="IYa-a0-vBv" secondAttribute="bottom" id="Tht-VE-waz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IYa-a0-vBv" secondAttribute="trailing" id="USP-rG-j31"/>
+                                                <constraint firstItem="IYa-a0-vBv" firstAttribute="leading" secondItem="bX1-Jx-89S" secondAttribute="leadingMargin" id="z3l-kC-QOt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelName" destination="IYa-a0-vBv" id="KnA-0J-I0w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fkl-3o-GfQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fkl-3o-GfQ" firstAttribute="trailing" secondItem="XAX-fD-3SI" secondAttribute="trailing" id="0DW-en-Taw"/>
+                            <constraint firstItem="XAX-fD-3SI" firstAttribute="top" secondItem="fkl-3o-GfQ" secondAttribute="top" id="AVj-QN-jVL"/>
+                            <constraint firstItem="fkl-3o-GfQ" firstAttribute="bottom" secondItem="XAX-fD-3SI" secondAttribute="bottom" id="Xun-kV-oYI"/>
+                            <constraint firstItem="XAX-fD-3SI" firstAttribute="leading" secondItem="fkl-3o-GfQ" secondAttribute="leading" id="YQz-Tr-adq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="XAX-fD-3SI" id="0i8-7R-a5u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ari-kJ-2iI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-485" y="-5229"/>
+        </scene>
         <!--View Realm Controller-->
         <scene sceneID="Y7o-m5-tUu">
             <objects>
