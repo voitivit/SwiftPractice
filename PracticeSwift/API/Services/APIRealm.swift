@@ -7,9 +7,8 @@
 
 import Foundation
 import RealmSwift
-
-class APIRealm {
-    func getAPIRealm(_ model: [Info]){
+class RealmAPI {
+    func realmAPI(_ model: [User]) {
         do {
             let realm = try Realm()
             realm.beginWrite()
@@ -20,4 +19,5 @@ class APIRealm {
             print(error)
         }
     }
+    
 }

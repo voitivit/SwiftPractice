@@ -7,7 +7,7 @@
 
 import Foundation
 import RealmSwift
-class Info: Object, Decodable {
+class User: Object, Decodable {
    @objc dynamic var id: Int
     @objc dynamic var name: String
     @objc dynamic var username: String
@@ -25,11 +25,9 @@ class Address: Object, Decodable {
     @objc dynamic var zipcode: String
     @objc dynamic var geo: Geo?
 }
-
 class Geo: Object, Decodable {
     @objc dynamic var latitude: String
     @objc dynamic var longitude: String
-    
     enum CodingKeys: String, CodingKey {
         case latitude = "lat"
         case longitude = "lng"
@@ -41,7 +39,11 @@ class Company: Object, Decodable {
     @objc dynamic var catchPhrase: String
     @objc dynamic var bs: String
 }
+
+
 //[
+
+
  //  {
  //    "id": 1,
  //    "name": "Leanne Graham",
@@ -62,6 +64,6 @@ class Company: Object, Decodable {
  //    "company": {
  //      "name": "Romaguera-Crona",
  //      "catchPhrase": "Multi-layered client-server neural-net",
- //      "bs": "harness real-time e-markets"
+ //      " ": "harness real-time e-markets"
  //    }
  //  },
